@@ -5,6 +5,9 @@
 @class NMBObjCRaiseExceptionMatcher;
 @protocol NMBMatcher;
 
+#if defined(__cplusplus)
+extern "C" {
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -381,3 +384,7 @@ NIMBLE_EXPORT void NMB_failWithMessage(NSString *msg, NSString *file, NSUInteger
 #endif
 
 NS_ASSUME_NONNULL_END
+
+#if defined(__cplusplus)
+}
+#endif
